@@ -1,6 +1,6 @@
 # 🚀 ResumeTailor AI v3.0
 
-AI-powered resume optimizer that tailors resumes to job descriptions. Get multiple optimized versions, ATS scores, and professional PDFs  **100% free, no sign-up required.**
+Resume optimization engine that tailors resumes to job descriptions using structured keyword matching, ATS analysis, and template-based rewriting. Generate multiple optimized versions, ATS scores, and professional PDFs — **100% free, no sign-up required.**
 
 ---
 
