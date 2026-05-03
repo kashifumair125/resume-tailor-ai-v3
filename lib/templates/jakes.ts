@@ -218,12 +218,14 @@ function parseResume(resumeText: string): any {
 }
 
 function isJobTitle(line: string): boolean {
-  // Job titles often contain position + company + dates
-  // Examples: "Software Developer | Tech Corp | 2020-Present"
-  // "Software Development Intern Feb 2025 – May 2025"
   return (
     (line.includes('|') && !line.startsWith('–') && !line.startsWith('•')) ||
-    (line.match(/\d{4}/) && !line.startsWith('–') && !line.startsWith('•') && line.length < 100) ||
-    line.match(/^[A-Z][a-z]+.*\s+(Intern|Engineer|Developer|Analyst|Manager|Consultant)/i)
+    (!!line.match(/\d{4}/) &&
+      !line.startsWith('–') &&
+      !line.startsWith('•') &&
+      line.length < 100) ||
+    !!line.match(
+      /^[A-Z][a-z]+.*\s+(Intern|Engineer|Developer|Analyst|Manager|Consultant)/i
+    )
   )
 }

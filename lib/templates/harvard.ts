@@ -202,7 +202,7 @@ function parseResume(resumeText: string): any {
 function isJobTitle(line: string): boolean {
   return (
     (line.includes('|') && !line.startsWith('–') && !line.startsWith('•')) ||
-    (line.match(/\d{4}/) && !line.startsWith('–') && !line.startsWith('•') && line.length < 100) ||
-    line.match(/^[A-Z][a-z]+.*\s+(Intern|Engineer|Developer|Analyst|Manager|Consultant)/i)
+    (!!line.match(/\d{4}/) && !line.startsWith('–') && !line.startsWith('•') && line.length < 100) ||
+    !!line.match(/^[A-Z][a-z]+.*\s+(Intern|Engineer|Developer|Analyst|Manager|Consultant)/i)
   )
 }
