@@ -302,10 +302,3 @@ Built to help people land better jobs by improving resumes intelligently — fas
 
 **No API. No login. Just results.**
 
-```
-
-If you want next step, I can also:
-- make your **GitHub README look "viral SaaS style"**
-- or redesign it like a **YC startup landing page**
-- or help fix that **Vercel build error you had earlier (Harvard template TS issue)**
-```
