@@ -75,7 +75,7 @@ function generateMockResponse(prompt: string): string {
   
   // Extract key skills from JD for keyword matching
   const jdLower = jobDesc.toLowerCase()
-  const keywordsToAdd = []
+  const keywordsToAdd: string[] = []
   
   // Common job keywords to check
   const possibleKeywords = ['SQL', 'Python', 'AWS', 'Data Governance', 'Power BI', 'Tableau', 
